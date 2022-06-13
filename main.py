@@ -36,7 +36,7 @@ def top_titles(number_of_titles, content_type):
         sorted_series.reverse()
         top_series = sorted_series[:number_of_titles]
         return top_series
-    
+ 
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
