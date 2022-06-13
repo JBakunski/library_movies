@@ -14,8 +14,8 @@ def search(library, title):
     
 
 def generate_views(library):
-        choosed_item = random.choice(library)
-        choosed_item.number_of_plays += random.randrange(1, 100)
+    choosed_item = random.choice(library)
+    choosed_item.number_of_plays += random.randrange(1, 100)
 
 
 def run_views_generator(library):
@@ -26,14 +26,12 @@ def run_views_generator(library):
 def top_titles(number_of_titles, content_type):
     if content_type == 'movie':
         movies = data.get_movies(entire_library)
-        sorted_movies = sorted(movies, key = lambda movie: movie.number_of_plays)
-        sorted_movies.reverse()
+        sorted_movies = sorted(movies, key = lambda movie: movie.number_of_plays, reverse= True)
         top_movies = sorted_movies[:number_of_titles]
         return top_movies
     elif content_type == 'series':
         series = data.get_series(entire_library)
-        sorted_series = sorted(series, key = lambda series: series.number_of_plays)
-        sorted_series.reverse()
+        sorted_series = sorted(series, key = lambda series: series.number_of_plays, reverse=True)
         top_series = sorted_series[:number_of_titles]
         return top_series
  
