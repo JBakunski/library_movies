@@ -1,5 +1,4 @@
 from models import Movie, Series
-import sys
 import random
 class Library:
     def __init__(self, elements):
