@@ -3,11 +3,11 @@ import data
 import result_presentation
 from library import Library
 
-library = Library(data.feed_initial_data())
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         exit(1)
+    library = Library(data.feed_initial_data())
     library.run_views_generator()
     movies_num = int(sys.argv[1])
     series_num = int(sys.argv[2])
