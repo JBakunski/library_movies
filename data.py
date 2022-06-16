@@ -18,18 +18,3 @@ def feed_initial_data():
         Series(12, 2, 'Gra o tron', 2011, 'Fantasy')
         ]
     return example_library
-
-# def get_elements(item_type, complete_list):
-#     items_list = []
-#     for item in complete_list:
-#         if type(item) == item_type:
-#             items_list.append(item)
-#     return sorted(items_list, key= lambda item: item.title)
-
-# def get_movies(complete_list):
-#     movies = get_elements(Movie, complete_list)
-#     return movies
-
-# def get_series(complete_list):
-#     series = get_elements(Series, complete_list)
-#     return series

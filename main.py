@@ -3,7 +3,6 @@ import data
 import result_presentation
 from library import Library
 
-
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         exit(1)
