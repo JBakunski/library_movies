@@ -44,7 +44,5 @@ class Library:
             return self.get_top_items(self.get_series(),number_of_titles)
     
     def get_top_items(self, titles_list, number_of_titles):
-        titles = titles_list
-        sorted_titles = sorted(titles, key = lambda title: title.number_of_plays, reverse = True)
-        top_titles = sorted_titles[:number_of_titles]
-        return top_titles
+        sorted_titles = sorted(titles_list, key = lambda title: title.number_of_plays, reverse = True)[:number_of_titles]
+        return sorted_titles
