@@ -19,17 +19,5 @@ class Series(Movie):
         self.episode = episode
         self.season = season
 
-    def __str__(self):
-        episode =''
-        if int(self.episode) < 10:
-            episode = f"E0{self.episode}"
-        else:
-            episode = f"E{self.episode}"
-
-        season = ''
-        if int(self.season) < 10:
-            season = f"S0{self.season}"
-        else:
-            season = f"S{self.season}"
-        
-        return f"{self.title} {season}{episode}"
+    def __str__(self):       
+        return f"{self.title} S{self.season:02d}E{self.episode:02d}"
