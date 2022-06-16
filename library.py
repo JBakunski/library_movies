@@ -8,7 +8,7 @@ class Library:
     def get_elements(self, item_type):
         items_list = []
         for item in self.elements:
-            if isinstance(item, item_type):
+            if type(item) == item_type:
                 items_list.append(item)
         return sorted(items_list, key= lambda item: item.title)
 
